@@ -16,9 +16,11 @@ export default function Home() {
      Did you know that Jupiter have{' '}
      <span className='main__heading--highlighted'>79</span> moons.
     </h1>
-    <Link className='main__link' to='/welcome-page'>
-     let's go
-    </Link>
+    <div className='main__container'>
+     <Link className='main__link' to='/welcome-page'>
+      let's go
+     </Link>
+    </div>
     <img src={astronautImg} alt='astronaut' className='main__image' />
    </main>
   </>
