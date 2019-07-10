@@ -3,6 +3,12 @@
  height: 10vh;
  padding: 1rem;
  @include flex(start, center, row);
+ animation-name: showFromTop;
+ animation-delay: 0.5s;
+ animation-duration: 1s;
+ animation-fill-mode: both;
+ animation-iteration-count: 1;
+
  &__logo {
   height: 4.3rem;
  }

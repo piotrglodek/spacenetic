@@ -7,14 +7,29 @@
   color: $white;
   text-align: center;
   margin-top: 6rem;
+  animation-name: showFromLeft;
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
 
   &--highlighted {
    color: $green;
   }
  }
 
+ &__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  animation-name: showFromRight;
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+ }
+
  &__link {
-  text-align: center;
   text-decoration: none;
   color: $green;
   border: 0.2rem solid $green;
@@ -59,5 +74,10 @@
  &__image {
   height: 20rem;
   display: block;
+  animation-name: showFromBottom;
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
  }
 }
