@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap');
 
-html,
-body {
- height: 100%;
+*,
+*::after,
+*::before {
+ box-sizing: border-box;
 }
 
 html {
