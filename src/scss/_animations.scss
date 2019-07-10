@@ -1,0 +1,45 @@
+@keyframes showFromTop {
+ from {
+  transform: translateY(-100%);
+ }
+ to {
+  transform: translateY(0);
+ }
+}
+
+@keyframes showFromBottom {
+ from {
+  transform: translateY(100%);
+ }
+ to {
+  transform: translateY(0);
+ }
+}
+
+@keyframes showFromLeft {
+ from {
+  transform: translateX(-100%);
+ }
+ to {
+  transform: translateX(0);
+ }
+}
+
+@keyframes showFromRight {
+ from {
+  transform: translateX(100%);
+ }
+ to {
+  transform: translateX(0);
+ }
+}
+
+@keyframes pulser {
+ 0% {
+  transform: scale(0.8);
+ }
+
+ 100% {
+  transform: scale(1.1);
+ }
+}
