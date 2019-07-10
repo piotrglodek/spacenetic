@@ -1,0 +1,39 @@
+.welcome {
+ @include flex(center, center, column);
+ height: 100%;
+
+ &__heading {
+  color: $green;
+  font-size: $l;
+  text-align: center;
+  margin: 0;
+  margin-top: -$spacing;
+ }
+
+ &__circle {
+  margin-top: $spacing;
+  width: 6.6rem;
+  height: 6.6rem;
+  border-radius: 50%;
+  background-color: $green;
+  box-shadow: 0 0 2rem rgba(0, 200, 150, 0.35);
+  &--pulsing {
+   animation-name: pulser;
+   animation-duration: 1s;
+   animation-timing-function: ease-out;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+   animation-play-state: running;
+  }
+ }
+}
+
+@keyframes pulser {
+ 0% {
+  transform: scale(0.8);
+ }
+
+ 100% {
+  transform: scale(1.1);
+ }
+}
