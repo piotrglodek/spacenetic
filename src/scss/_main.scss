@@ -7,7 +7,7 @@
   color: $white;
   text-align: center;
   margin-top: 6rem;
-  animation-name: showFromLeft;
+  animation-name: appear;
   animation-delay: 0.5s;
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -22,7 +22,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  animation-name: showFromRight;
+  animation-name: appear;
   animation-delay: 0.5s;
   animation-duration: 1s;
   animation-fill-mode: both;

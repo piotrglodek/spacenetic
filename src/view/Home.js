@@ -13,7 +13,7 @@ export default function Home() {
    </header>
    <main className='main'>
     <h1 className='main__heading'>
-     Did you know that Jupiter have{' '}
+     Did you know that Jupiter have
      <span className='main__heading--highlighted'>79</span> moons.
     </h1>
     <div className='main__container'>
