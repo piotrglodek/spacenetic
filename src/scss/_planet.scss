@@ -1,0 +1,40 @@
+.planet {
+ &__header {
+  @include flex(space-between, center, row);
+  padding: 1.8rem;
+ }
+
+ &__name {
+  color: $green;
+  font-size: $m;
+  margin: 0;
+ }
+
+ &__btn {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  display: block;
+ }
+
+ &__body {
+  @include flex(flex-start, flex-start, column);
+ }
+
+ &__info {
+  color: $white;
+  font-size: $x;
+  margin: 0;
+  padding-left: $spacing;
+  padding-bottom: $spacing;
+  &--highlighted {
+   color: $green;
+   margin-left: 0.8rem;
+  }
+ }
+}
+
+.arrow {
+ display: block;
+}
