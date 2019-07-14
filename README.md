@@ -12,6 +12,7 @@
 ## About
 
 A simple educational application presenting information about our solar system.
+Data was taken from [nasa.gov](https://nssdc.gsfc.nasa.gov/planetary/factsheet/)
 
 ## Technologies
 
@@ -32,3 +33,5 @@ $ npm start
 ```
 
 ## Features
+
+Animations when clicking next arrow button
