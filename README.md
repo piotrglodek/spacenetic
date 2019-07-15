@@ -34,4 +34,5 @@ $ npm start
 
 ## Features
 
-Animations when clicking next arrow button
++ Animations when clicking next arrow button
++ RWD for Desktop devices
