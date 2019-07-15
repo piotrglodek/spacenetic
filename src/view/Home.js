@@ -6,23 +6,21 @@ import WelcomePage from './WelcomePage';
 
 export default function Home() {
  return (
-  <>
-   <header className='header'>
-    <img src={spaceneticLogo} alt='spacenetic logo' className='header__logo' />
-    <span className='header__heading'>SPACENETIC</span>
+  <div className='home'>
+   <header className='home__header'>
+    <img src={spaceneticLogo} alt='spacenetic logo' className='home__logo' />
+    <span className='home__logo-name'>SPACENETIC</span>
    </header>
-   <main className='main'>
-    <h1 className='main__heading'>
-     Did you know that Jupiter have
-     <span className='main__heading--highlighted'>79</span> moons.
+   <main className='home__main'>
+    <h1 className='home__main-heading'>
+     Did you know that Jupiter have{' '}
+     <span className='home__main-heading--highlighted'>79</span> moons.
     </h1>
-    <div className='main__container'>
-     <Link className='main__link' to='/welcome-page'>
-      let's go
-     </Link>
-    </div>
-    <img src={astronautImg} alt='astronaut' className='main__image' />
+    <Link className='home__main-link' to='/welcome-page'>
+     let's go
+    </Link>
+    <img src={astronautImg} alt='astronaut' className='home__main-image' />
    </main>
-  </>
+  </div>
  );
 }
