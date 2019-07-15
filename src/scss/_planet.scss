@@ -1,10 +1,10 @@
 .planet {
- min-height: 100%;
+ min-height: 100vh;
  position: relative;
- background-size: cover;
+ background-size: contain;
  background-repeat: no-repeat;
  background-position: center center;
-
+ background-color: $black;
  &::after {
   content: '';
   position: absolute;
@@ -20,11 +20,7 @@
   @include flex(center, flex-start, column);
   position: relative;
   z-index: 1;
-  animation-name: appear;
-  animation-delay: 0.5s;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-iteration-count: 1;
+  animation: appear 1s ease 0.5s normal 1 both;
  }
 
  &__name {

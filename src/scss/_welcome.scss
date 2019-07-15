@@ -1,29 +1,26 @@
 .welcome {
  @include flex(center, center, column);
  height: 100vh;
+ background-color: $blue;
 
  &__heading {
   color: $green;
   font-size: $l;
   text-align: center;
   margin: 0;
-  margin-top: -$spacing;
+  margin-top: -$spacing * 4;
+  text-transform: uppercase;
  }
 
  &__circle {
   margin-top: $spacing;
-  width: 6.6rem;
-  height: 6.6rem;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
   background-color: $green;
   box-shadow: 0 0 2rem rgba(0, 200, 150, 0.35);
   &--pulsing {
-   animation-name: pulser;
-   animation-duration: 1s;
-   animation-timing-function: ease-out;
-   animation-direction: alternate;
-   animation-iteration-count: infinite;
-   animation-play-state: running;
+   animation: pulser 0.6s ease 0.5s alternate infinite both;
   }
  }
 }
